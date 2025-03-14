@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #e0f7fa, #fef9e7); /* Soft Ocean & Light Yellow */
+    font-family: Arial, sans-serif;
+    color: #36454F; /* Charcoal */
+}
+
+h1 {
+    text-align: center;
+    background-color: #6a5acd; /* SlateBlue */
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.game_panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.images_container {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.images_box {
+    width: 20vmin;
+    height: 20vmin;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d1e7ff; /* Light Blue */
+    transition: all 0.3s ease;
+}
+
+.images_box:hover {
+    cursor: pointer;
+    border: 3px solid #6a5acd; /* SlateBlue */
+    transform: scale(1.1);
+    background-color: #c3aed6; /* Soft Lavender */
+}
+
+.images_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.score_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+.user_score, .computer_score {
+    background-color: #ffebcd; /* Blanched Almond */
+    color: #3a3a3a; /* Dark Text */
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.msg_box {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 2px solid #36454F;
+    color: white;
+    background-color: #6a5acd; /* SlateBlue */
+    border-radius: 20px;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.msg_box:hover {
+    cursor: pointer;
+    background-color: #483d8b; /* Dark Slate Blue */
+    transform: scale(1.05);
+}
